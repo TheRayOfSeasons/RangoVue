@@ -7,6 +7,7 @@ dependencies:
   vue: 2.6.11
 devDependencies:
   dotenv: 8.2.0
+  esm: 3.2.25
   nodemon: 2.0.4
 lockfileVersion: 5.1
 packages:
@@ -420,6 +421,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=
+  /esm/3.2.25:
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-U1suiZ2oDVWv4zPO56S0NcR5QriEahGtdN2OR6FiOG4WJvcjBVFB0qI4+eKoWFH483PKGuLuu6V8Z4T5g63UVA==
   /etag/1.8.1:
     dev: false
     engines:
@@ -1477,6 +1484,7 @@ packages:
 specifiers:
   cors: ^2.8.5
   dotenv: ^8.2.0
+  esm: ^3.2.25
   express: ^4.17.1
   helmet: ^3.23.3
   morgan: ^1.10.0

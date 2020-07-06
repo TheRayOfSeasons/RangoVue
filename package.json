@@ -23,6 +23,7 @@
   "homepage": "https://github.com/TheRayOfSeasons/RangoVue#readme",
   "devDependencies": {
     "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
     "nodemon": "^2.0.4"
   },
   "dependencies": {

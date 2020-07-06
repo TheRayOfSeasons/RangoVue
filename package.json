@@ -1,0 +1,36 @@
+{
+  "name": "rango_vue",
+  "version": "1.0.0",
+  "description": "A full-stack project for link categorization built with Vue and Express. Based on Django's tutorial project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRayOfSeasons/RangoVue.git"
+  },
+  "keywords": [
+    "Learning",
+    "Vue",
+    "Express"
+  ],
+  "author": "Ray Lawrence Henri Sison",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheRayOfSeasons/RangoVue/issues"
+  },
+  "homepage": "https://github.com/TheRayOfSeasons/RangoVue#readme",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "morgan": "^1.10.0",
+    "sequelize": "^6.3.0",
+    "vue": "^2.6.11"
+  }
+}

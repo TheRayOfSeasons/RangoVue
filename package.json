@@ -4,7 +4,8 @@
   "description": "A full-stack project for link categorization built with Vue and Express. Based on Django's tutorial project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node -r esm -r dotenv/config .",
+    "dev": "nodemon -r esm -r dotenv/config ."
   },
   "repository": {
     "type": "git",

@@ -1,10 +1,8 @@
 import { Router } from 'express';
+import { AuthController } from './controllers';
 
 const router = Router();
 
-router.get('/', (req, res) =>
-{
-  res.send({message: 'Authentication'});
-});
+router.get('/', AuthController.get);
 
 export const authenticationRoutes = router;

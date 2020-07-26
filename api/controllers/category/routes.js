@@ -1,10 +1,8 @@
 import { Router } from 'express';
+import { CategoryController } from './controllers';
 
 const router = Router();
 
-router.get('/', (req, res) =>
-{
-  res.send({message: 'Category'});
-});
+router.get('/', CategoryController.get);
 
 export const categoryRoutes = router;

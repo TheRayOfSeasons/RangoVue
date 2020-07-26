@@ -5,10 +5,9 @@ import helmet from 'helmet';
 import cors from 'cors';
 import path from 'path';
 import db from './config/database';
-import { routerConfigs } from './routes/routes';
+import { router } from './controllers/routes';
 
 const PORT = process.env.PORT || 1337;
-const welcome = process.env.WELCOME_MESSAGE || 'Welcome to Rango!';
 const api = express();
 
 db.authenticate()
@@ -19,9 +18,7 @@ api.use(helmet());
 api.use(cors());
 api.use(morgan('tiny'));
 api.use(express.json());
-
-for(const { key, router } of routerConfigs)
-  api.use(key, router);
+api.use('/', router);
 
 api.listen(PORT, () =>
 {
